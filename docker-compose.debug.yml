@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  a9s-postgres-app:
+    image: a9s-postgres-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
